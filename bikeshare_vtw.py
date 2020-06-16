@@ -16,16 +16,16 @@ def get_filters():
 
     print('OK, let\'s find out some stuff on bikesharing in 3 major cities in the US! AND PLACE THIS ON GITHUB')
 
-    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+# TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
-    city = input('Are we going to look at chicago, new york city or washington?\n').lower()
+    city = input('Are we going to look at chicago, new york city or washington? Tell me!\n').lower()
     while city not in ('chicago', 'new york city', 'washington'):
         print('check again!')
         city = input('Are we going to look at chicago, new york city or washington?\n').lower()
 
     # TO DO: get user input for month (all, january, february, ... , june)
 
-    month = input('Which month would you like to see data from?\nPlease choose from january, february, march, april, may, june or all.\n').lower()
+    month = input('Which month would you like to see data from, please?\nPlease choose from january, february, march, april, may, june or all.\n').lower()
     while month not in('january', 'february', 'march', 'april', 'may', 'june', 'all'):
         print('Please key in a correct month name\n')
         month = input('Which month would you like to see data from?\nPlease choose from january, february, march, april, may, june or all.\n').lower()
